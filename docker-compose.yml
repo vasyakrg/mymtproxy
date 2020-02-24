@@ -13,9 +13,4 @@ services:
       - ${FOLDER}:/data
     ports:
       - ${PORT}:443
-    networks:
-      - mtproxy-net
-
-networks:
-  mtproxy-net:
-    name: mtproxy-net
+    network_mode: "host"
