@@ -9,9 +9,9 @@ services:
     environment:
       - SECRET=${SECRET}
     volumes:
-      - /srv/services/proxy-config:/data
+      - ${FOLDER}:/data
     ports:
-      - 1945:443
+      - ${PORT}:443
     networks:
       - mtproxy-net
 
