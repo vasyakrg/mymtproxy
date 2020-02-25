@@ -12,7 +12,7 @@ TAG=null
     echo "TAG=${TAG}" >> .env
 }
 
-
+cd /srv/mymtproxy
 docker-compose pull mtproxy
 docker stop mtproxy
 docker rm mtproxy
